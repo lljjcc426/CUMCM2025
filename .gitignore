@@ -1,0 +1,13 @@
+﻿__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+archive/temp/

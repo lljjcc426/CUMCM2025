@@ -1,0 +1,16 @@
+         Mixed Linear Model Regression Results
+=======================================================
+Model:            MixedLM Dependent Variable: Y染色体浓度   
+No. Observations: 1056    Method:             REML     
+No. Groups:       262     Scale:              0.0003   
+Min. group size:  1       Log-Likelihood:     2506.1876
+Max. group size:  8       Converged:          Yes      
+Mean group size:  4.0                                  
+-------------------------------------------------------
+             Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------
+Intercept     0.079    0.019  4.198 0.000  0.042  0.117
+孕周数           0.003    0.000 18.951 0.000  0.003  0.003
+孕妇BMI        -0.002    0.001 -2.620 0.009 -0.003 -0.000
+Group Var     0.001    0.005                           
+=======================================================

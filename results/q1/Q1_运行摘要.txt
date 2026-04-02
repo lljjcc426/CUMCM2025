@@ -1,0 +1,51 @@
+【问题一（重跑）关键信息】
+- 清洗后_完整观测.csv 条数：1056
+- 推断男胎孕妇数：262
+- 建模用观测条数（全部观测）：1056；不同孕妇：262
+- 建模用观测条数（每人一次）：262；不同孕妇：262
+
+[OLS_全部观测_线性]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 Y染色体浓度   R-squared:                       0.048
+Model:                            OLS   Adj. R-squared:                  0.046
+Method:                 Least Squares   F-statistic:                     26.42
+Date:                Sat, 06 Sep 2025   Prob (F-statistic):           6.36e-12
+Time:                        23:40:59   Log-Likelihood:                 2163.8
+No. Observations:                1056   AIC:                            -4322.
+Df Residuals:                    1053   BIC:                            -4307.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.1348      0.012     10.794      0.000       0.110       0.159
+孕周数            0.0011      0.000      4.648      0.000       0.001       0.002
+孕妇BMI         -0.0024      0.000     -6.163      0.000      -0.003      -0.002
+==============================================================================
+Omnibus:                       35.382   Durbin-Watson:                   0.799
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               28.959
+Skew:                           0.327   Prob(JB):                     5.15e-07
+Kurtosis:                       2.520   Cond. No.                         473.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+[混合效应模型]
+         Mixed Linear Model Regression Results
+=======================================================
+Model:            MixedLM Dependent Variable: Y染色体浓度   
+No. Observations: 1056    Method:             REML     
+No. Groups:       262     Scale:              0.0003   
+Min. group size:  1       Log-Likelihood:     2506.1876
+Max. group size:  8       Converged:          Yes      
+Mean group size:  4.0                                  
+-------------------------------------------------------
+             Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------
+Intercept     0.079    0.019  4.198 0.000  0.042  0.117
+孕周数           0.003    0.000 18.951 0.000  0.003  0.003
+孕妇BMI        -0.002    0.001 -2.620 0.009 -0.003 -0.000
+Group Var     0.001    0.005                           
+=======================================================
