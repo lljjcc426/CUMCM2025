@@ -129,8 +129,3 @@ python src/q4/Q4.py --csv data/processed/question4/清洗后_完整观测.csv
 pip install -r requirements.txt
 ```
 
-## Notes
-
-- `archive/packages/` 中保留了原始压缩包和安装包，方便追溯。
-- `archive/ide/` 中保留了旧的 `.idea` 配置，但已从主项目结构移出。
-- 如果后续准备正式上传 GitHub，建议再补一个 `LICENSE` 和更细的实验说明文档。
